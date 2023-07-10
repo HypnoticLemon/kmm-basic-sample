@@ -1,0 +1,26 @@
+CREATE TABLE User (
+    id INTEGER NOT NULL,
+    firstName TEXT NOT NULL,
+    lastName TEXT,
+    age INTEGER,
+    gender TEXT NOT NULL,
+    email TEXT,
+    phone TEXT,
+    birthDate TEXT,
+    image TEXT,
+    bloodGroup TEXT,
+    height TEXT,
+    weight TEXT
+);
+
+insertUser:
+INSERT INTO User(id, firstName, lastName, age, gender, email, phone, birthDate,image,bloodGroup,height,weight)
+VALUES(?, ?, ?, ?, ?, ?, ?, ?,?,?,?,?);
+
+removeAllUser:
+DELETE FROM User;
+
+selectAllUserInfo:
+SELECT User.*
+FROM User;
+
